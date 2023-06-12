@@ -16,6 +16,15 @@ jobs:
           ruby-version: 2.6.8
 #          working-directory: backend
 
+      - name: Print Ruby version before
+        run: ruby --version
+
+      - name: Print Gem version before
+        run: gem --version
+
+      - name: Print Bundler version before
+        run: bundler --version
+
 
       - name: Set up Bundler
         run: |
