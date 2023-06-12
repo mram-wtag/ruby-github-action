@@ -16,6 +16,13 @@ jobs:
           ruby-version: 2.6.8
 #          working-directory: backend
 
+
+      - name: Set up Bundler
+        run: |
+          gem update --system
+          gem install bundler -v 2.3.3
+          
+
       - name: Print Ruby version
         run: ruby --version
 
