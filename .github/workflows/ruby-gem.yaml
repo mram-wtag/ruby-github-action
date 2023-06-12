@@ -30,3 +30,8 @@ jobs:
 
         - name: Update RubyGems
           run: gem update --system
+
+        - name: Display Runner OS
+          run:
+            echo "Runner OS: ${{ runner.os }}"
+
