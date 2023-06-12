@@ -14,7 +14,7 @@ jobs:
         uses: ruby/setup-ruby@v1.138.0
         with:
           ruby-version: 2.7.2
-          working-directory: backend
+#          working-directory: backend
 
       - name: Print Ruby version
         run: ruby --version
