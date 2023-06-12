@@ -18,3 +18,15 @@ jobs:
             bundler: 2.3.3
             bundler-cache: true
             cache-version: 1
+
+
+        - name: Set Up Ruby alternative
+          uses: ruby/setup-ruby@v1.139.0
+          with:
+            ruby-version: 2.6.8
+            bundler: 2.3.3
+            bundler-cache: true
+            cache-version: 1
+
+        - name: Update RubyGems
+          run: gem update --system
