@@ -32,6 +32,6 @@ jobs:
           run: gem update --system
 
         - name: Display Runner OS
-          run:
+          run: |
             echo "Runner OS: ${{ runner.os }}"
 
